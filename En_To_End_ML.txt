@@ -65,3 +65,60 @@ Now Run,
 		The above will also run the setup.py, because of this '-e .' in requirement.txt file
 	
 	After running the above, we get a new 'mlproject.egg-info'
+
+	git add .
+
+	git status
+
+	git commit -m 'setup.py and requirement'
+	
+	git push -u origin main
+
+=====================================================================================================================================================================
+
+2]CREATE Project structure:
+
+Create important folders inside src:
+
+Components - Folder, then also create __init__.py file inside the components folder. [Components are just modules]
+
+	create data_ingestion.py So, Data Ingestion is one of the components. [Get the data from the database]
+
+	create data_transformation.py, How to transform the datas
+
+	create model_trainer.py for training the models.
+
+pipeline
+
+	create __init__.py
+
+	create train_pipeline.py
+
+	create predict_pipeline.py
+
+Create important files inside the src:
+
+	logger.py
+
+	exception.py
+
+	utils.py [common functions]
+
+Update the exception.py and logger.py which is a generic files
+
+Run
+	Go into the project directory, within the environment created (vene)
+
+	python src/logger.py
+		When execute this command, a log file will be created
+
+	To check the exception.py file
+
+	python src/exception.py
+	
+
+
+
+
+
+
