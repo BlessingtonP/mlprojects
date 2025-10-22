@@ -1,0 +1,67 @@
+AGENDA:
+
+1] Set up the GitHub repository
+	a)New Environment
+	b)setup.py
+	c)requirement.txt
+
+
+Create Repository:
+	Open GitHub. Create New Repository, give a name and then just give => Create Repository
+
+	Go to the project folder, and then open Anaconda Prompt and Navigate to the project directory
+
+	E:
+	cd MachineLearningBasics\End_To_End\Machine_Learning
+	code . (This will open the Visual Studio code, for this specific project)
+
+	Then inside this folder only, environment will be created and whatever packages installed will be created over here.
+
+Create Environment - Inside the Visual studio code:
+
+	conda create -p venv python==3.12.7 -y 
+
+	After this command, environment will be created and all the packages and installed inside this folder (venv)
+
+Activate Environment:
+	conda activate venv\
+
+	This will take inside the environment folder
+
+Clone the project from GitHub and then sync with the Project:
+
+	git init
+		Create a README.md file in the Project directory
+	git add README.md
+	git commit -m "first commit"
+	git branch -M main
+	git remote add origin git@github.com:BlessingtonP/mlprojects.git
+
+	git remote -v [ Check whether it is synced or not ]
+
+	git push -u origin main
+
+	Create a new file in the GitHub, create file .gitignore => Then choose python programming language (Choose gitignore: programing language)
+		So that the .gitignore file will be automatically updated with respect to the python structure.
+
+	Then commit the change.
+
+	Now give,
+		git pull [ VS code terminal ] - All the files will be pulled into the project
+
+Create Files
+	setup.py
+		With this file, we build our whole application as a package and then deploy
+	requirement.txt
+		In this file, '-e .' [This maps this file to setup.py]
+
+Create src folder
+	Create src folder and create a file __init__.py
+
+	So, whenever the setup.py runs find package, all the folders like src will be considered as a packages, and this will find the __init__.py file.
+
+Now Run,
+	pip install -r requirement.txt
+		The above will also run the setup.py, because of this '-e .' in requirement.txt file
+	
+	After running the above, we get a new 'mlproject.egg-info'
