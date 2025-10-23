@@ -115,6 +115,15 @@ Run
 	To check the exception.py file
 
 	python src/exception.py
+		create 
+
+=============================================================================
+
+Create a notebook folder, and data folder.
+	EDA - Can be done in a Jupyter notebook file
+	Model Training - Can also be done in a jupyter notebook file
+
+	Before, install ipykernel - To run a jupyter notebook file in VScode
 	
 
 

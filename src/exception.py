@@ -1,6 +1,6 @@
 #Any exception is happened the sys library will have the access and control
 import sys
-import logging
+from src.logger import logging
 
 #xe_tb will provide all the information about the errors
 
@@ -22,7 +22,7 @@ class CustomException(Exception):
         return self.error_message   
     
 
-#The Below is to check this file working
+#The Below is to check this file working and save to the log file
 #python src/exception.py
 
 #if __name__=='__main__':
