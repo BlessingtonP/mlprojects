@@ -124,6 +124,12 @@ Create a notebook folder, and data folder.
 	Model Training - Can also be done in a jupyter notebook file
 
 	Before, install ipykernel - To run a jupyter notebook file in VScode
+
+============================================================================
+
+components/data_ingestion.py
+
+
 	
 
 
