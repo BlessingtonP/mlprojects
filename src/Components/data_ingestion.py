@@ -11,6 +11,9 @@ from dataclasses import dataclass
 from src.Components.data_transformation import DataTransformation
 from src.Components.data_transformation import DataTransformationConfig
 
+from src.Components.model_trainer import ModelTrainerConfig
+from src.Components.model_trainer import ModelTrainer
+
 #THIS FILE CREATE ARTIFACTS -> data.csv, test.csv and train.csv
 #TO RUN THIS FILE -> python src/Components/data_ingestion.py
 #Why dataclass is used -> Here we can only declare variable, and no function
@@ -58,3 +61,6 @@ if __name__=="__main__":
 
     data_transformation=DataTransformation()
     train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+
+    modeltrainer=ModelTrainer()
+    print(modeltrainer.initiate_model_trainer(train_arr,test_arr))
